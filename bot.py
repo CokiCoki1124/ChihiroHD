@@ -40,6 +40,7 @@ class ChihiroBot(commands.Bot):
         await self.load_extension("cogs.automod")
         await self.load_extension("cogs.ml_calculator")
         await self.load_extension("cogs.admin")
+        await self.load_extension("cogs.ai_chat")
         await self.load_extension("cogs.lofi_radio")
 
 
