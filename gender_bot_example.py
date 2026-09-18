@@ -1,3 +1,4 @@
+import os
 import discord
 from discord.ext import commands
 from discord.ui import Button, View
@@ -69,4 +70,4 @@ async def on_ready():
     print(f"Bot siap sebagai {bot.user}")
 
 
-bot.run("MTUzNTcyNzI1NzExNTQyNjk3Nw.GniLEq.5JZcMKmCiLKEWaq4Ci00USeEdxHwuLi42FB3Hc")
+bot.run(os.environ.get("DISCORD_TOKEN", "YOUR_DISCORD_TOKEN_HERE"))
